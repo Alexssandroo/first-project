@@ -1,13 +1,17 @@
 import Vue from 'vue'
-import VueMaterial from 'vue-material'
-import 'vue-material/dist/vue-material.css'
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
+import router from './router'
+import store from './vuex'
 import App from './App'
 
-Vue.use(VueMaterial)
+Vue.use(Vuetify)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
+  router,
+  store,
   el: '#app',
   render: h => h(App)
 })
